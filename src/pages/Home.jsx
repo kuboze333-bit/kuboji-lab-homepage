@@ -128,8 +128,8 @@ export default function Home() {
 
         <section id="links" className="scroll-mt-24 px-5 py-10 sm:px-6">
           <div className="mx-auto max-w-6xl rounded-[2rem] border border-white/80 bg-white/70 p-6 shadow-[0_18px_60px_rgba(15,23,42,0.08)] backdrop-blur-md sm:p-8">
-            <p className="text-xs font-semibold uppercase tracking-[0.32em] text-kuboji-gold">
-              お知らせ
+            <p className="text-xs font-semibold uppercase tracking-[0.32em] text-kuboji-gold" translate="no">
+              Customer Notice
             </p>
             <h2 className="mt-4 text-2xl font-semibold text-kuboji-ink sm:text-3xl">
               お知らせ / note / SNS
@@ -152,7 +152,7 @@ export default function Home() {
         </section>
 
         <section id="contact" className="scroll-mt-24 px-5 py-10 pb-16 sm:px-6">
-          <div className="mx-auto max-w-6xl rounded-[2rem] border border-kuboji-green/15 bg-[#edf5f1] p-6 text-kuboji-ink shadow-[0_14px_44px_rgba(31,54,93,0.08)] sm:p-8">
+          <div className="mx-auto max-w-6xl rounded-[2rem] border border-slate-200/80 bg-white/75 p-6 text-kuboji-ink shadow-[0_14px_44px_rgba(31,54,93,0.06)] backdrop-blur-md sm:p-8">
             <p className="text-xs font-semibold uppercase tracking-[0.32em] text-kuboji-gold" translate="no">
               Contact us
             </p>
