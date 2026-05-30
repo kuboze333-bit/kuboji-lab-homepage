@@ -31,13 +31,6 @@ const services = [
     accent: 'muted',
     href: null,
     description: '心の整理と対話のためのサービスです。詳細は決まり次第ご案内します。'
-  },
-  {
-    name: '業務改善サービス',
-    status: '準備中',
-    accent: 'muted',
-    href: null,
-    description: '勤務表作成補助アプリなど、現場の負担を軽くする仕組みを準備中です。'
   }
 ]
 
@@ -64,7 +57,7 @@ export default function Home() {
                   周波数で、世界の揺らぎを整える。
                 </h1>
                 <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
-                  久保寺 承太郎が提供するサービスの案内です。Frequency Memory、個別鑑定、今後展開するケア領域・業務改善サービスをここに集約していきます。
+                  久保寺 承太郎が提供するサービスの案内です。Frequency Memory、個別鑑定、整体セラピー、カウンセリングをここに集約していきます。
                 </p>
 
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -92,7 +85,7 @@ export default function Home() {
                     久保寺 承太郎
                   </div>
                   <p className="mt-4 text-sm leading-7 text-white/78">
-                    占術対話、個別鑑定、ケア領域、業務改善サービスをつなぐ入口。
+                    占術対話、個別鑑定、整体セラピー、カウンセリングをつなぐ入口。
                   </p>
                 </div>
               </div>
