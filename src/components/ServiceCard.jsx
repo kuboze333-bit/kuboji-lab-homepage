@@ -30,7 +30,7 @@ export default function ServiceCard({ name, description, status, href, accent = 
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className="mt-6 inline-flex items-center justify-center rounded-2xl bg-gradient-to-r from-kuboji-navy to-kuboji-green px-5 py-3 text-sm font-semibold text-white shadow-[0_10px_26px_rgba(31,54,93,0.16)] transition hover:-translate-y-0.5 hover:shadow-[0_14px_34px_rgba(31,54,93,0.22)]"
+          className="mt-6 inline-flex items-center justify-center rounded-2xl border border-kuboji-green/25 bg-[#edf5f1] px-5 py-3 text-sm font-semibold text-kuboji-navy shadow-[0_8px_20px_rgba(31,54,93,0.08)] transition hover:-translate-y-0.5 hover:bg-[#e3f0eb] hover:shadow-[0_12px_26px_rgba(31,54,93,0.12)]"
         >
           開く
         </a>

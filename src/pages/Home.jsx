@@ -70,7 +70,7 @@ export default function Home() {
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row">
                   <a
                     href="#services"
-                    className="rounded-2xl bg-gradient-to-r from-kuboji-navy to-kuboji-green px-6 py-4 text-center text-sm font-semibold text-white shadow-[0_14px_34px_rgba(31,54,93,0.16)] transition hover:-translate-y-0.5 hover:shadow-[0_18px_42px_rgba(31,54,93,0.22)]"
+                    className="rounded-2xl border border-kuboji-green/25 bg-[#edf5f1] px-6 py-4 text-center text-sm font-semibold text-kuboji-navy shadow-[0_8px_20px_rgba(31,54,93,0.08)] transition hover:-translate-y-0.5 hover:bg-[#e3f0eb] hover:shadow-[0_12px_26px_rgba(31,54,93,0.12)]"
                   >
                     サービスを見る
                   </a>
@@ -152,14 +152,14 @@ export default function Home() {
         </section>
 
         <section id="contact" className="scroll-mt-24 px-5 py-10 pb-16 sm:px-6">
-          <div className="mx-auto max-w-6xl rounded-[2rem] border border-white/80 bg-gradient-to-br from-kuboji-navy to-kuboji-green p-6 text-white shadow-[0_18px_60px_rgba(15,23,42,0.16)] sm:p-8">
-            <p className="text-xs font-semibold uppercase tracking-[0.32em] text-kuboji-gold">
-              お問い合わせ
+          <div className="mx-auto max-w-6xl rounded-[2rem] border border-kuboji-green/15 bg-[#edf5f1] p-6 text-kuboji-ink shadow-[0_14px_44px_rgba(31,54,93,0.08)] sm:p-8">
+            <p className="text-xs font-semibold uppercase tracking-[0.32em] text-kuboji-gold" translate="no">
+              Contact us
             </p>
             <h2 className="mt-4 text-2xl font-semibold sm:text-3xl">
               お問い合わせ
             </h2>
-            <p className="mt-4 max-w-2xl text-sm leading-8 text-white/82">
+            <p className="mt-4 max-w-2xl text-sm leading-8 text-slate-600">
               公式LINE・メール問い合わせは準備中です。公開前に連絡先を確認して設定します。
             </p>
           </div>
