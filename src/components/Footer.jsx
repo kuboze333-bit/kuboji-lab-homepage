@@ -1,26 +1,32 @@
+const legalLinks = [
+  { label: '特定商取引法に基づく表記', href: '/#/legal/specified-commercial-transactions' },
+  { label: 'プライバシーポリシー', href: '/#/legal/privacy' },
+  { label: '利用規約・返金/キャンセル規定', href: '/#/legal/terms-refund' },
+  { label: '免責事項', href: '/#/legal/disclaimer' },
+  { label: '商品価格一覧', href: '/#/legal/pricing' },
+  { label: 'お問い合わせ', href: '/#/legal/contact' }
+]
+
 export default function Footer() {
   return (
-    <footer className="border-t border-slate-200 bg-white">
-      <div className="mx-auto max-w-6xl px-5 py-8 sm:px-6">
-        <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
-          <div>
-            <div className="text-sm font-semibold tracking-[0.14em] text-kuboji-ink">
-              久保寺 承太郎
-            </div>
-            <div className="mt-2 text-xs text-slate-500">
-              kuboji-lab.com
-            </div>
-          </div>
-
-          <div className="flex flex-wrap gap-3 text-xs text-slate-500">
-            <span>特定商取引法に基づく表記：準備中</span>
-            <span>プライバシーポリシー：準備中</span>
-          </div>
+    <footer className="border-t border-white/70 px-5 py-10 sm:px-6">
+      <div className="mx-auto flex max-w-6xl flex-col gap-6 text-sm text-slate-600 md:flex-row md:items-start md:justify-between">
+        <div>
+          <div className="font-semibold text-kuboji-ink">久保寺 承太郎</div>
+          <div className="mt-2" translate="no">kuboji-lab.com</div>
+          <div className="mt-2">© 2026 久保寺 承太郎</div>
+          <a className="mt-3 inline-block transition hover:text-kuboji-navy" href="mailto:contact@kuboji-lab.com">
+            contact@kuboji-lab.com
+          </a>
         </div>
 
-        <p className="mt-6 text-xs text-slate-400">
-          © 2026 久保寺 承太郎. All rights reserved.
-        </p>
+        <nav className="grid gap-2 sm:grid-cols-2 md:text-right" aria-label="法務・お問い合わせ">
+          {legalLinks.map((link) => (
+            <a key={link.href} className="transition hover:text-kuboji-navy" href={link.href}>
+              {link.label}
+            </a>
+          ))}
+        </nav>
       </div>
     </footer>
   )

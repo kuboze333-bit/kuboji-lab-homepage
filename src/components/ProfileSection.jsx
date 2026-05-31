@@ -14,10 +14,10 @@ export default function ProfileSection() {
 
           <div className="space-y-4 text-sm leading-8 text-slate-600 sm:text-base">
             <p>
-              久保寺 承太郎は、Frequency Memoryをはじめ、占術対話・個別鑑定を案内する事業ブランドです。
+              久保寺 承太郎は、Frequency Memoryをはじめ、六感覚占術タロットと個別鑑定を案内する事業ブランドです。
             </p>
             <p>
-              現時点では仮プロフィールです。正式な自己紹介文は、公開前に確認して確定します。
+              カードを通じて、今の流れや心の反応を静かに読み解くサービスを提供しています。
             </p>
           </div>
         </div>

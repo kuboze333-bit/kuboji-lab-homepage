@@ -9,14 +9,7 @@ const services = [
     status: '利用可能',
     accent: 'navy',
     href: 'https://frequency-memory-web.pages.dev',
-    description: '六感覚占術タロット × AI対話で、今の流れをそっと読み解く場所。'
-  },
-  {
-    name: '個別鑑定',
-    status: '利用可能',
-    accent: 'green',
-    href: 'https://frequency-memory-web.pages.dev/#personal-reading',
-    description: '久保寺 承太郎が直接カードを引き、相談内容に合わせて丁寧に読み解く鑑定。'
+    description: '六感覚占術タロット × AI対話で、今の流れをそっと読み解く場所。久保寺 承太郎による個別鑑定もこちらから。'
   }
 ]
 
@@ -40,10 +33,10 @@ export default function Home() {
                   kuboji-lab.com
                 </p>
                 <h1 className="mt-5 text-[2.45rem] font-semibold leading-[1.18] tracking-[-0.03em] text-kuboji-ink sm:text-6xl">
-                  周波数で、世界の揺らぎを整える。
+                  言葉にできない気持ちにも、流れがある。
                 </h1>
                 <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
-                  久保寺 承太郎が提供するサービスの案内です。Frequency Memoryと個別鑑定をここに集約していきます。
+                  久保寺 承太郎が案内する、Frequency Memoryと個別鑑定の公式入口です。六感覚占術タロットを通じて、今の流れを静かに読み解いていきます。
                 </p>
 
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -71,7 +64,7 @@ export default function Home() {
                     久保寺 承太郎
                   </div>
                   <p className="mt-4 text-sm leading-7 text-white/78">
-                    Frequency Memoryと個別鑑定をつなぐ入口。
+                    Frequency Memoryと個別鑑定をつなぐ公式入口。
                   </p>
                 </div>
               </div>
@@ -89,7 +82,7 @@ export default function Home() {
                 サービス一覧
               </h2>
               <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-600">
-                現在利用できるサービスをまとめています。
+                現在ご案内しているサービスです。詳細はFrequency Memoryのページで確認できます。
               </p>
             </div>
 
@@ -98,25 +91,16 @@ export default function Home() {
                 <ServiceCard key={service.name} {...service} />
               ))}
 
-              {/*
-                fincode審査前のため一時非表示：カウンセリング・整体・セラピー系
+              {/**
+                fincode審査前の導線整理：個別鑑定はFrequency Memoryカード内へ統合
 
                 <ServiceCard
-                  key="周波数調整 整体セラピー"
-                  name="周波数調整 整体セラピー"
-                  status="準備中"
-                  accent="muted"
-                  href={null}
-                  description="身体と感覚の調整を扱うサービスです。詳細は決まり次第ご案内します。"
-                />
-
-                <ServiceCard
-                  key="カウンセリング"
-                  name="カウンセリング"
-                  status="準備中"
-                  accent="muted"
-                  href={null}
-                  description="心の整理と対話のためのサービスです。詳細は決まり次第ご案内します。"
+                  key="個別鑑定"
+                  name="個別鑑定"
+                  status="利用可能"
+                  accent="green"
+                  href="https://frequency-memory-web.pages.dev/#personal-reading"
+                  description="久保寺 承太郎が直接カードを引き、相談内容に合わせて丁寧に読み解く鑑定。"
                 />
               */}
             </div>
@@ -138,15 +122,15 @@ export default function Home() {
             <div className="mt-6 grid gap-4 sm:grid-cols-3">
               <div className="rounded-2xl border border-slate-200 bg-white/80 p-5">
                 <div className="font-semibold text-kuboji-ink">note</div>
-                <p className="mt-2 text-sm leading-7 text-slate-600">ラブジオメトリー等へのリンクを後で設定します。</p>
+                <p className="mt-2 text-sm leading-7 text-slate-600">noteで公開中の記事や作品情報を案内します。</p>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-white/80 p-5">
                 <div className="font-semibold text-kuboji-ink">X / Instagram</div>
-                <p className="mt-2 text-sm leading-7 text-slate-600">SNSリンクは確認後に設定します。</p>
+                <p className="mt-2 text-sm leading-7 text-slate-600">SNSでのお知らせや更新情報を案内します。</p>
               </div>
               <div className="rounded-2xl border border-slate-200 bg-white/80 p-5">
                 <div className="font-semibold text-kuboji-ink">お知らせ</div>
-                <p className="mt-2 text-sm leading-7 text-slate-600">公開後の更新情報を掲載します。</p>
+                <p className="mt-2 text-sm leading-7 text-slate-600">サービスに関する更新情報を掲載します。</p>
               </div>
             </div>
           </div>
@@ -161,8 +145,14 @@ export default function Home() {
               お問い合わせ
             </h2>
             <p className="mt-4 max-w-2xl text-sm leading-8 text-slate-600">
-              公式LINE・メール問い合わせは準備中です。公開前に連絡先を確認して設定します。
+              お問い合わせは、以下のメールアドレスまでお願いいたします。
             </p>
+            <a
+              href="mailto:contact@kuboji-lab.com"
+              className="mt-4 inline-flex rounded-2xl border border-kuboji-green/25 bg-[#edf5f1] px-5 py-3 text-sm font-semibold text-kuboji-navy transition hover:-translate-y-0.5 hover:bg-[#e3f0eb]"
+            >
+              contact@kuboji-lab.com
+            </a>
           </div>
         </section>
       </main>
