@@ -16,21 +16,7 @@ const services = [
     status: '利用可能',
     accent: 'green',
     href: 'https://frequency-memory-web.pages.dev/#personal-reading',
-    description: '久保寺 承太郎が直接カードを引き、相談内容に合わせて丁寧に読みます。'
-  },
-  {
-    name: '周波数調整 整体セラピー',
-    status: '準備中',
-    accent: 'muted',
-    href: null,
-    description: '身体と感覚の調整を扱うサービスです。詳細は決まり次第ご案内します。'
-  },
-  {
-    name: 'カウンセリング',
-    status: '準備中',
-    accent: 'muted',
-    href: null,
-    description: '心の整理と対話のためのサービスです。詳細は決まり次第ご案内します。'
+    description: '久保寺 承太郎が直接カードを引き、相談内容に合わせて丁寧に読み解く鑑定。'
   }
 ]
 
@@ -57,7 +43,7 @@ export default function Home() {
                   周波数で、世界の揺らぎを整える。
                 </h1>
                 <p className="mt-6 max-w-2xl text-base leading-8 text-slate-600 sm:text-lg">
-                  久保寺 承太郎が提供するサービスの案内です。Frequency Memory、個別鑑定、整体セラピー、カウンセリングをここに集約していきます。
+                  久保寺 承太郎が提供するサービスの案内です。Frequency Memoryと個別鑑定をここに集約していきます。
                 </p>
 
                 <div className="mt-8 flex flex-col gap-3 sm:flex-row">
@@ -85,7 +71,7 @@ export default function Home() {
                     久保寺 承太郎
                   </div>
                   <p className="mt-4 text-sm leading-7 text-white/78">
-                    占術対話、個別鑑定、整体セラピー、カウンセリングをつなぐ入口。
+                    Frequency Memoryと個別鑑定をつなぐ入口。
                   </p>
                 </div>
               </div>
@@ -103,7 +89,7 @@ export default function Home() {
                 サービス一覧
               </h2>
               <p className="mt-4 max-w-2xl text-sm leading-7 text-slate-600">
-                現在利用できるサービスと、準備中のサービスをまとめています。
+                現在利用できるサービスをまとめています。
               </p>
             </div>
 
@@ -111,6 +97,28 @@ export default function Home() {
               {services.map((service) => (
                 <ServiceCard key={service.name} {...service} />
               ))}
+
+              {/*
+                fincode審査前のため一時非表示：カウンセリング・整体・セラピー系
+
+                <ServiceCard
+                  key="周波数調整 整体セラピー"
+                  name="周波数調整 整体セラピー"
+                  status="準備中"
+                  accent="muted"
+                  href={null}
+                  description="身体と感覚の調整を扱うサービスです。詳細は決まり次第ご案内します。"
+                />
+
+                <ServiceCard
+                  key="カウンセリング"
+                  name="カウンセリング"
+                  status="準備中"
+                  accent="muted"
+                  href={null}
+                  description="心の整理と対話のためのサービスです。詳細は決まり次第ご案内します。"
+                />
+              */}
             </div>
           </div>
         </section>
