@@ -282,7 +282,7 @@ export default function Home() {
               勤務表に費やしていた時間を、患者さんとスタッフのために使う時間へ。Shift Assist OS は、その最初の一歩を支えます。
             </p>
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <a className="rounded-2xl bg-white px-6 py-4 text-center text-sm font-semibold text-slate-950 transition hover:-translate-y-0.5 hover:bg-slate-100" href="#contact">
+              <a className="rounded-2xl bg-blue-600 px-6 py-4 text-center text-sm font-semibold text-white shadow-lg shadow-blue-900/30 ring-1 ring-blue-300/40 transition hover:-translate-y-0.5 hover:bg-blue-500" href="#contact">
                 無料で試す
               </a>
               <a className="rounded-2xl border border-white/30 px-6 py-4 text-center text-sm font-semibold text-white transition hover:-translate-y-0.5 hover:bg-white/10" href="#contact">
