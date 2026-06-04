@@ -1,4 +1,6 @@
 const legalLinks = [
+  { label: 'トップ', href: '/#/' },
+  { label: 'Shift Assist OS', href: '/#/shift-assist' },
   { label: '特定商取引法に基づく表記', href: '/#/legal/specified-commercial-transactions' },
   { label: 'プライバシーポリシー', href: '/#/legal/privacy' },
   { label: '利用規約・返金/キャンセル規定', href: '/#/legal/terms-refund' },
@@ -20,7 +22,7 @@ export default function Footer() {
           </a>
         </div>
 
-        <nav className="grid gap-2 sm:grid-cols-2 md:text-right" aria-label="法務・お問い合わせ">
+        <nav className="grid gap-2 sm:grid-cols-2 md:text-right" aria-label="サイト情報・法務・お問い合わせ">
           {legalLinks.map((link) => (
             <a key={link.href} className="transition hover:text-blue-800" href={link.href}>
               {link.label}

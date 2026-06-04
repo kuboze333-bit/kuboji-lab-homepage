@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react'
 import Home from './pages/Home.jsx'
+import ShiftAssistPage from './pages/ShiftAssistPage.jsx'
 import LegalPage from './pages/LegalPage.jsx'
 
 function getRouteFromHash() {
@@ -11,6 +12,10 @@ function getRouteFromHash() {
 
   const path = hash.slice(2)
   const [, slug] = path.split('/')
+
+  if (path === 'shift-assist') {
+    return { page: 'shift-assist' }
+  }
 
   if (path.startsWith('legal/') && slug) {
     return { page: 'legal', slug }
@@ -31,6 +36,10 @@ export default function App() {
     window.addEventListener('hashchange', handleHashChange)
     return () => window.removeEventListener('hashchange', handleHashChange)
   }, [])
+
+  if (route.page === 'shift-assist') {
+    return <ShiftAssistPage />
+  }
 
   if (route.page === 'legal') {
     return <LegalPage slug={route.slug} />
