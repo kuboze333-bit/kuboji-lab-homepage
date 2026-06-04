@@ -1,4 +1,3 @@
-import Header from '../components/Header.jsx'
 import Footer from '../components/Footer.jsx'
 
 const CONTACT_EMAIL = 'contact@kuboji-lab.com'
@@ -7,7 +6,7 @@ const legalPages = {
   'specified-commercial-transactions': {
     eyebrow: 'Legal',
     title: '特定商取引法に基づく表記',
-    lead: 'Frequency Memoryの販売・提供に関する表示です。',
+    lead: 'Shift Assist OSの販売・提供に関する表示です。',
     sections: [
       {
         heading: '販売者名',
@@ -19,11 +18,11 @@ const legalPages = {
       },
       {
         heading: 'サービス名',
-        body: ['Frequency Memory']
+        body: ['Shift Assist OS']
       },
       {
         heading: '販売価格',
-        body: ['商品価格一覧ページに記載しています。']
+        body: ['料金一覧ページに記載しています。']
       },
       {
         heading: '商品代金以外の必要料金',
@@ -35,7 +34,7 @@ const legalPages = {
       },
       {
         heading: 'サービス提供時期',
-        body: ['決済完了後、各商品ページまたはサービス画面の案内に従って提供します。']
+        body: ['決済完了後、各サービス画面または当方の案内に従って提供します。']
       },
       {
         heading: '返品・キャンセル',
@@ -45,10 +44,10 @@ const legalPages = {
         ]
       },
       {
-        heading: '表現および商品に関する注意',
+        heading: 'サービスに関する注意',
         body: [
-          '本サービスは占術・内省支援を目的としたサービスであり、医療・法律・投資等の専門判断の代替ではありません。',
-          '鑑定結果や将来の出来事を保証するものではありません。'
+          '本サービスは勤務表作成を支援する業務効率化ツールです。',
+          '各事業所に適用される法令、就業規則、労務管理上の最終確認は利用者または所属組織の責任で行うものとします。'
         ]
       },
       {
@@ -60,7 +59,7 @@ const legalPages = {
   privacy: {
     eyebrow: 'Privacy',
     title: 'プライバシーポリシー',
-    lead: 'kuboji-lab.comおよびFrequency Memoryにおける個人情報の取り扱いについて定めます。',
+    lead: 'kuboji-lab.comおよびShift Assist OSにおける個人情報等の取り扱いについて定めます。',
     sections: [
       {
         heading: '取得する情報',
@@ -69,7 +68,7 @@ const legalPages = {
           '決済に必要な情報',
           'サービス利用履歴',
           '問い合わせ内容',
-          '鑑定または対話に入力された相談内容'
+          'サービス利用時に入力された設定情報'
         ]
       },
       {
@@ -96,6 +95,10 @@ const legalPages = {
         body: ['取得した情報は適切に管理します。']
       },
       {
+        heading: 'スタッフ氏名等の取り扱い',
+        body: ['サービス設計上、スタッフの氏名をサーバーに保存しない運用を前提とします。必要な表示は利用者端末内で管理します。']
+      },
+      {
         heading: '問い合わせ窓口',
         body: [CONTACT_EMAIL]
       }
@@ -104,27 +107,19 @@ const legalPages = {
   'terms-refund': {
     eyebrow: 'Terms',
     title: '利用規約・返金/キャンセル規定',
-    lead: 'Frequency Memoryの利用条件および返金・キャンセルに関する規定です。',
+    lead: 'Shift Assist OSの利用条件および返金・キャンセルに関する規定です。',
     sections: [
       {
         heading: 'サービス内容',
-        body: ['Frequency Memoryは、六感覚占術タロット × AI対話による占術・内省支援サービスです。']
+        body: ['Shift Assist OSは、勤務表作成を支援する業務効率化サービスです。']
       },
       {
-        heading: '専門判断について',
-        body: ['本サービスは、医療・法律・投資判断の代替ではありません。']
-      },
-      {
-        heading: '結果の保証について',
-        body: ['鑑定結果や未来の出来事を保証するものではありません。']
-      },
-      {
-        heading: '利用者の責任',
-        body: ['ユーザーは、提供内容を参考情報として受け取り、自己責任で利用するものとします。']
+        heading: '利用上の確認事項',
+        body: ['本サービスが生成する勤務表は業務支援のための案であり、最終確認と運用判断は利用者または所属組織が行うものとします。']
       },
       {
         heading: '禁止事項',
-        body: ['他者を傷つける内容、不正利用、システム妨害、その他運営が不適切と判断する行為を禁止します。']
+        body: ['不正利用、システム妨害、第三者の権利を侵害する行為、その他運営が不適切と判断する行為を禁止します。']
       },
       {
         heading: '返金・キャンセル',
@@ -142,42 +137,46 @@ const legalPages = {
   disclaimer: {
     eyebrow: 'Disclaimer',
     title: '免責事項',
-    lead: 'Frequency Memoryおよび個別鑑定のご利用にあたっての注意事項です。',
+    lead: 'Shift Assist OSのご利用にあたっての注意事項です。',
     sections: [
       {
         heading: 'サービスの位置づけ',
-        body: ['Frequency Memoryおよび個別鑑定は、占術・内省・自己理解を目的としたサービスです。']
+        body: ['本サービスは勤務表作成を支援する業務効率化ツールです。']
+      },
+      {
+        heading: '最終確認について',
+        body: ['生成された勤務表は、配置基準、就業規則、雇用契約、労務管理上の条件等を利用者側で確認したうえで運用してください。']
       },
       {
         heading: '専門判断について',
-        body: ['提供される内容は、医療、法律、投資、その他専門的判断の代替ではありません。']
+        body: ['本サービスは、法律、労務、医療、会計その他専門的判断の代替ではありません。']
       },
       {
-        heading: '結果について',
-        body: ['鑑定結果や将来の出来事、特定の成果を保証するものではありません。']
-      },
-      {
-        heading: '最終判断について',
-        body: ['利用者は、提供内容を参考情報として受け取り、最終的な判断はご自身の責任で行うものとします。']
+        heading: '成果について',
+        body: ['導入による特定の成果、業務削減時間、収益改善等を保証するものではありません。']
       }
     ]
   },
   pricing: {
     eyebrow: 'Pricing',
-    title: '商品価格一覧',
-    lead: 'fincode申請前時点で掲載する有料商品の価格一覧です。',
+    title: '料金一覧',
+    lead: 'Shift Assist OSの料金一覧です。',
     sections: [
       {
-        heading: 'FM Standard',
-        body: ['Standard（1回）：150円', 'Standard 3回券：400円', 'Standard 5回券：600円', '初回限定Standard：75円']
+        heading: '無料トライアル',
+        body: ['14日間：全機能をお試しいただけます。']
       },
       {
-        heading: 'FM Deep Session',
-        body: ['Deep Session（1回）：300円', 'Deep 3回券：800円', 'Deep 5回券：1,200円']
+        heading: '個人プラン',
+        body: ['月額 1,200円：お一人・1病棟から。']
       },
       {
-        heading: '個別鑑定',
-        body: ['個別鑑定①：3,800円', '個別鑑定②：8,000円']
+        heading: '病棟プラン',
+        body: ['月額 4,800円：1病棟・複数名で利用できます。']
+      },
+      {
+        heading: '病院プラン',
+        body: ['月額 29,800円：全病棟、管理ダッシュボード、優先サポートに対応します。']
       }
     ]
   },
@@ -196,13 +195,13 @@ const legalPages = {
 
 function LegalSection({ heading, body }) {
   return (
-    <section className="rounded-2xl border border-slate-200 bg-white/80 p-5">
-      <h2 className="text-base font-semibold text-kuboji-ink">{heading}</h2>
+    <section className="rounded-2xl border border-slate-200 bg-white p-5 shadow-sm">
+      <h2 className="text-base font-semibold text-slate-950">{heading}</h2>
       <div className="mt-3 space-y-2 text-sm leading-7 text-slate-600">
         {body.map((line) => (
           line === CONTACT_EMAIL ? (
             <p key={line}>
-              <a className="font-semibold text-kuboji-navy underline underline-offset-4" href={`mailto:${CONTACT_EMAIL}`}>
+              <a className="font-semibold text-blue-700 underline underline-offset-4" href={`mailto:${CONTACT_EMAIL}`}>
                 {CONTACT_EMAIL}
               </a>
             </p>
@@ -219,20 +218,25 @@ export default function LegalPage({ slug }) {
   const page = legalPages[slug] || legalPages['specified-commercial-transactions']
 
   return (
-    <div className="min-h-screen overflow-hidden bg-kuboji-mist text-kuboji-ink">
-      <Header />
+    <div className="min-h-screen bg-slate-50 text-slate-950">
+      <header className="border-b border-slate-200 bg-white/90 px-5 py-4 backdrop-blur sm:px-6">
+        <div className="mx-auto flex max-w-6xl items-center justify-between gap-4">
+          <a className="text-sm font-semibold text-slate-950" href="/">
+            Shift Assist OS
+          </a>
+          <a className="rounded-full border border-slate-300 px-4 py-2 text-xs font-semibold text-slate-700 transition hover:border-blue-600 hover:text-blue-700" href="/">
+            トップへ戻る
+          </a>
+        </div>
+      </header>
 
       <main className="px-5 py-12 sm:px-6 sm:py-16">
         <div className="mx-auto max-w-4xl">
-          <a className="text-sm font-semibold text-kuboji-navy underline underline-offset-4" href="/">
-            トップへ戻る
-          </a>
-
-          <div className="mt-8 rounded-[2rem] border border-white/80 bg-white/75 p-6 shadow-[0_18px_60px_rgba(15,23,42,0.08)] backdrop-blur-md sm:p-8">
-            <p className="text-xs font-semibold uppercase tracking-[0.32em] text-kuboji-gold" translate="no">
+          <div className="rounded-3xl border border-slate-200 bg-white p-6 shadow-sm sm:p-8">
+            <p className="text-xs font-semibold uppercase tracking-[0.28em] text-blue-700" translate="no">
               {page.eyebrow}
             </p>
-            <h1 className="mt-4 text-3xl font-semibold tracking-[-0.03em] text-kuboji-ink sm:text-4xl">
+            <h1 className="mt-4 text-3xl font-semibold tracking-[-0.03em] text-slate-950 sm:text-4xl">
               {page.title}
             </h1>
             <p className="mt-5 text-sm leading-8 text-slate-600 sm:text-base">
